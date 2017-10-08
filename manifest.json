@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "5ch Direct Link",
+    "version": "1.0.0",
+    "description": "『5ちゃんねる』のスレッド上のリンクを、リダイレクトを経るものではなく直接的なリンクに変更します。",
+    "content_scripts": [
+        {
+            "matches": [
+                "http://5ch.net/*",
+                "https://5ch.net/*",
+                "http://*.5ch.net/*",
+                "https://*.5ch.net/*"
+            ],
+            "js": [
+                "jquery.min.js",
+                "main.js"
+            ]
+        }
+    ]
+}
